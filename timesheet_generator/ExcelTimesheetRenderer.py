@@ -7,7 +7,9 @@ from .cell_style_generators.DayCellStyleGenerator import DayCellStyleGenerator
 from .cell_style_generators.DateCellStyleGenerator import DateCellStyleGenerator
 from .cell_style_generators.AttendanceCellStyleGenerator import AttendanceCellStyleGenerator
 
-
+# pyinstaller stores file in a temporary folder on users system during the program execution
+# Location of that temporary folder is set in sys._MEIPASS by pyinstaller
+# In case that path does not exist we use current directory as base bath
 def resource_path(relative_path):
   try:
     base_path = sys._MEIPASS
