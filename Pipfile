@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 openpyxl = "*"
 pyinstaller = "*"
+pywin32-ctypes = "*"
 
 [dev-packages]
 
