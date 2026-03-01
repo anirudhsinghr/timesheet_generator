@@ -1,5 +1,5 @@
 import calendar
-from .TimesheetDate import TimesheetDate
+from . import TimesheetDate
 
 class TimesheetDataGenerator:
   def __init__(self, name, month, year, leaves):

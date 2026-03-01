@@ -1,7 +1,7 @@
 import calendar
 
-from timesheet_generator.ExcelTimesheetRenderer import ExcelTimesheetRenderer
-from timesheet_generator.TimesheetDataGenerator import TimesheetDataGenerator
+from . import ExcelTimesheetRenderer
+from . import TimesheetDataGenerator
 
 class TimesheetGenerator:
   def __init__(self, employee_name, month, year, leaves):

@@ -3,9 +3,9 @@ import sys
 
 from openpyxl import load_workbook
 
-from .cell_style_generators.DayCellStyleGenerator import DayCellStyleGenerator
-from .cell_style_generators.DateCellStyleGenerator import DateCellStyleGenerator
-from .cell_style_generators.AttendanceCellStyleGenerator import AttendanceCellStyleGenerator
+from .cell_style_generators import DayCellStyleGenerator
+from .cell_style_generators import DateCellStyleGenerator
+from .cell_style_generators import AttendanceCellStyleGenerator
 
 # pyinstaller stores file in a temporary folder on users system during the program execution
 # Location of that temporary folder is set in sys._MEIPASS by pyinstaller
